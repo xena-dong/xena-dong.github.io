@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications · Xinyi Dong</title>
+<meta name="description" content="Publications by Xinyi Dong on LLM self-reflection, video social reasoning, and data-grounded research ideation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">Xinyi Dong</a>
+    <div class="topbar-links">
+      <a href="index.html">About</a>
+      <a href="publications.html" aria-current="page">Publications</a>
+    </div>
+  </div>
+</nav>
+<main>
+
+  <h1>Publications</h1>
+
+  <h2 class="year">2026</h2>
+
+  <article class="pub">
+    <div class="thumb">
+      <span class="badge">ICLR 2026</span>
+      <img src="images/read-the-room.jpg" alt="Read the Room overview figure: visible social events linked to an iceberg of hidden beliefs, intentions, and emotions" loading="lazy">
+    </div>
+    <div>
+      <p class="pub-title">Read the Room: Video Social Reasoning with Mental-Physical Causal Chains</p>
+      <p class="authors">Lixing Niu, Jiapeng Li, Xingping Yu, <b>Xinyi Dong</b>, Shu Wang, Ruining Feng, Bo Wu, Ping Wei, Yisen Wang, and Lifeng Fan</p>
+      <p class="venue-line">International Conference on Learning Representations (ICLR), 2026</p>
+      <p class="role"><b>My role:</b> built the training-data pipeline, ran baseline evaluations, and fine-tuned Qwen2-VL-7B on the data.</p>
+      <div class="pills">
+        <button class="pill" type="button" aria-expanded="false" aria-controls="abs-rtr">Abs</button>
+        <a class="pill" href="https://openreview.net/forum?id=TJilJnZjpw">Paper</a>
+        <a class="pill" href="https://github.com/LiXingNiu/Read-the-Room">Code</a>
+      </div>
+      <p class="abstract" id="abs-rtr" hidden>"Read the room", or the ability to infer others' mental states from subtle social cues, is a hallmark of human social intelligence, but remains a major challenge for current AI systems. Existing social reasoning datasets are limited in complexity, scale, and coverage of mental states, falling short of the rich causal dynamics found in real-life interactions. In this work, we introduce R<sup>3</sup>-Bench, an evaluation benchmark with fine-grained annotations of belief, intent, desire, emotion, and their causal chains in complex scenarios. Furthermore, we introduce R<sup>3</sup>-FDT, a large-scale training set generated through a novel automated pipeline with the same chain structure. We conduct a comprehensive evaluation of state-of-the-art (SOTA) large vision-language models (LVLMs) on R<sup>3</sup>-Bench, revealing substantial deficiencies in consistent multi-step social reasoning. We also fine-tune a 7B model on R<sup>3</sup>-FDT, achieving notable improvements across multiple relevant benchmarks.</p>
+    </div>
+  </article>
+
+  <h2 class="year">2025</h2>
+
+  <article class="pub">
+    <div class="thumb">
+      <span class="badge">ACL 2025 Findings</span>
+      <img src="images/reflectevo.jpg" alt="ReflectEvo pipeline: data collection, reflection generation, reflection curation, and reflection tuning" loading="lazy">
+    </div>
+    <div>
+      <p class="pub-title">ReflectEvo: Improving Meta Introspection of Small LLMs by Learning Self-Reflection</p>
+      <p class="authors">Jiaqi Li, <b>Xinyi Dong</b>, Yang Liu, Zhizhuo Yang, Quansen Wang, Xiaobo Wang, Songchun Zhu, Zixia Jia, and Zilong Zheng</p>
+      <p class="venue-line">Findings of the Association for Computational Linguistics: ACL 2025</p>
+      <p class="role"><b>My role:</b> built the pipeline from data generation to evaluation, producing the 460K-sample dataset and the fine-tuned models.</p>
+      <div class="pills">
+        <button class="pill" type="button" aria-expanded="false" aria-controls="abs-re">Abs</button>
+        <a class="pill" href="https://aclanthology.org/2025.findings-acl.871/">Paper</a>
+        <a class="pill" href="https://github.com/bigai-nlco/ReflectEvo">Code</a>
+      </div>
+      <p class="abstract" id="abs-re" hidden>We present a novel pipeline ReflectEvo to demonstrate that small language models (SLMs) can enhance meta introspection through reflection learning. This process iteratively generates self-reflection for self-training, fostering a continuous and self-evolving process. Leveraging this pipeline, we construct ReflectEvo-460k, a large scale, comprehensive self-generated reflection dataset with broadened instructions and diverse multi-domain tasks. Building upon this dataset, we demonstrate the effectiveness of reflection learning to improve SLMs' reasoning abilities using SFT and DPO with remarkable performance, substantially boosting Llama-3 from 52.4% to 71.2% and Mistral from 44.4% to 71.1%. It validates that ReflectEvo can rival or even surpass the reasoning capability of the three prominent open-sourced models on BIG-bench without distillation from superior models or fine-grained human annotation. We further conduct a deeper analysis on the high quality of self-generated reflections and their impact on error localization and correction. Our work highlights the potential of continuously enhancing the reasoning performance of SLMs through iterative reflection learning in the long run.</p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="thumb">
+      <span class="badge">NeurIPS 2025 Workshop</span>
+      <img src="images/ideation.jpg" alt="Data-augmented LLM ideation framework: metadata in idea generation and automatic validation in idea selection" loading="lazy">
+    </div>
+    <div>
+      <p class="pub-title">Augmenting Research Ideation with Data: An Empirical Investigation in Social Science</p>
+      <p class="authors">Xiao Liu, <b>Xinyi Dong</b>, Xinyang Gao, Yansong Feng, and Xun Pang</p>
+      <p class="venue-line">AI for Science Workshop at the Conference on Neural Information Processing Systems (NeurIPS), 2025</p>
+      <p class="role"><b>My role:</b> integrated dataset metadata into the ideation frameworks and designed the human evaluation.</p>
+      <div class="pills">
+        <button class="pill" type="button" aria-expanded="false" aria-controls="abs-idea">Abs</button>
+        <a class="pill" href="https://arxiv.org/abs/2505.21396">arXiv</a>
+      </div>
+      <p class="abstract" id="abs-idea" hidden>Recent advancements in large language models (LLMs) demonstrate strong potential for generating novel research ideas, yet such ideas often struggle with feasibility and effectiveness. In this paper, we investigate whether augmenting LLMs with relevant data during the ideation process can improve idea quality. Our framework integrates data at two stages: (1) incorporating metadata during idea generation to guide models toward more feasible concepts, and (2) introducing an automated preliminary validation step during idea selection to assess the empirical plausibility of hypotheses within ideas. We evaluate our approach in the social science domain, with a specific focus on climate negotiation topics. Expert evaluation shows that metadata improves the feasibility of generated ideas by 20%, while automated validation improves the overall quality of selected ideas by 7%. Beyond assessing the quality of LLM-generated ideas, we conduct a human study to examine whether these ideas, augmented with related data and preliminary validation, can inspire researchers in their own ideation. Participants report that the LLM-generated ideas and validation are highly useful, and the ideas they propose with such support are proven to be of higher quality than those proposed without assistance. Our findings highlight the potential of data-augmented research ideation and underscore the practical value of LLM-assisted ideation in real-world academic settings.</p>
+    </div>
+  </article>
+
+  <footer>Last updated October 2026</footer>
+</main>
+<script>
+  document.querySelectorAll('button.pill[aria-controls]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var panel = document.getElementById(btn.getAttribute('aria-controls'));
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      panel.hidden = open;
+    });
+  });
+</script>
+</body>
+</html>
